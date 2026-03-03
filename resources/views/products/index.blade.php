@@ -29,11 +29,11 @@
                         </div>
                         <div class="col-md-4">
                             <label for="quantity_in_stock" class="form-label">Quantity in stock</label>
-                            <input type="number" class="form-control" id="quantity_in_stock" name="quantity_in_stock" min="0" step="1" required>
+                            <input type="text" class="form-control" id="quantity_in_stock" name="quantity_in_stock" inputmode="numeric" pattern="[0-9]+" required>
                         </div>
                         <div class="col-md-4">
                             <label for="price_per_item" class="form-label">Price per item</label>
-                            <input type="number" class="form-control" id="price_per_item" name="price_per_item" min="0" step="0.01" required>
+                            <input type="text" class="form-control" id="price_per_item" name="price_per_item" inputmode="decimal" pattern="^\d+(\.\d{1,2})?$" required>
                         </div>
                         <div class="col-12">
                             <button class="btn btn-primary" type="submit">Submit (AJAX)</button>
@@ -116,11 +116,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="edit-quantity-in-stock" class="form-label">Quantity in stock</label>
-                        <input type="number" id="edit-quantity-in-stock" class="form-control" min="0" step="1" required>
+                        <input type="text" id="edit-quantity-in-stock" class="form-control" inputmode="numeric" pattern="[0-9]+" required>
                     </div>
                     <div class="mb-3">
                         <label for="edit-price-per-item" class="form-label">Price per item</label>
-                        <input type="number" id="edit-price-per-item" class="form-control" min="0" step="0.01" required>
+                        <input type="text" id="edit-price-per-item" class="form-control" inputmode="decimal" pattern="^\d+(\.\d{1,2})?$" required>
                     </div>
                     <div id="edit-errors" class="text-danger"></div>
                 </div>
